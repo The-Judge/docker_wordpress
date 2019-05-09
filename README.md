@@ -31,7 +31,7 @@ executed, you can either extend this image (or the [wordpress:latest] one)
 with a brief `Dockerfile` like this:
 
     FROM derjudge/wordpress
-    RUN <whatever-voodoo-comes-to-your-mind>
+    RUN whatever-voodoo-comes-to-your-mind ...
 
 followed by a `docker build -t <your-tag> .` or do it like this, eliminating
 the need to rebuild (and deploy) the image:
