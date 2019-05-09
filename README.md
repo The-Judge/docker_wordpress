@@ -63,7 +63,7 @@ to store and update several Docker images, locally.
 
 ## How recent is this image?
 
-This image uses Docker Hub's autobuild mechanism. That means that
+This image uses Docker Hub's autobuild mechanism. That means, that
 whenever the upstream image at [wordpress:latest] is updated or there is
 any update in this image's Git repository, a new build of this image will
 be triggered, automatically.  
