@@ -71,3 +71,4 @@ That way, this image is ensured to be as recent as the upstream base
 image, which is maintained by a strong and active community, always.
 
 [wordpress:latest]: https://hub.docker.com/_/wordpress
+
