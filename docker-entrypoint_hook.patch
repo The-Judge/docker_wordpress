@@ -1,0 +1,14 @@
+--- docker-entrypoint_orig.sh	2019-02-09 05:12:25.000000000 +0100
++++ docker-entrypoint.sh	2019-02-12 16:09:15.000000000 +0100
+@@ -277,6 +277,11 @@
+ EOPHP
+ 	fi
+ 
++    # if this file exists, source it here to serve as a hooking option
++    if [ -f "/mnt/extra/hook.sh" ]; then
++      . /mnt/extra/hook.sh
++    fi
++
+ 	# now that we're definitely done writing configuration, let's clear out the relevant envrionment variables (so that stray "phpinfo()" calls don't leak secrets from our code)
+ 	for e in "${envs[@]}"; do
+ 		unset "$e"
